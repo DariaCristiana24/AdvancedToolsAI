@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1884123794978937234, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903981316565290636, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2162548923905018679, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -20,6 +28,10 @@ PrefabInstance:
       propertyPath: cube
       value: 
       objectReference: {fileID: 9105334355888115327, guid: bc3acf243bbca5a47a23d078947fad42, type: 3}
+    - target: {fileID: 3734724694006592017, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
+      propertyPath: MaxStep
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 3734724694006592017, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: topLeft
       value: 
@@ -36,9 +48,13 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6226779736707217369, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6277715536898282099, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 65.3
       objectReference: {fileID: 0}
     - target: {fileID: 6277715536898282099, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_LocalPosition.y
@@ -46,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6277715536898282099, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.9
       objectReference: {fileID: 0}
     - target: {fileID: 6277715536898282099, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_LocalRotation.w
@@ -85,8 +101,20 @@ PrefabInstance:
       value: Enviroment Small Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9009686774118966274, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9009686774118966274, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9009686774118966274, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 10
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040324610801238260, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1466874583878630102, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}

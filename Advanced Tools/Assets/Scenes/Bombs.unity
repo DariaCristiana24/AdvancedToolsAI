@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -196,7 +196,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -263,7 +263,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -330,7 +330,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -397,7 +397,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -464,7 +464,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -531,7 +531,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -598,7 +598,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -850,7 +850,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -917,7 +917,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -984,7 +984,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -1051,7 +1051,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -1118,7 +1118,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -1185,7 +1185,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -1252,7 +1252,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
@@ -1317,10 +1317,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1451968527854698685, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
-      propertyPath: m_BrainParameters.VectorObservationSize
-      value: 13
-      objectReference: {fileID: 0}
     - target: {fileID: 1562245252369904849, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
       propertyPath: m_Name
       value: Enviroment More Bomb
@@ -1365,14 +1361,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6555784884140545710, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
-      propertyPath: moreBombs
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 6543682768828235126, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
-    - {fileID: 5146488679439537791, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67517a5de2a1ece41a9fdbf1a9ad584d, type: 3}

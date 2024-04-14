@@ -9,9 +9,8 @@ using UnityEngine;
 public class FindFruitsAgent : Agent
 {
     [SerializeField]
-    bool moreBombs;
-    [SerializeField]
-    bool obstacles;
+    bool addBomb;
+
     [SerializeField]
     float speed = 5;
     [SerializeField]
@@ -29,15 +28,14 @@ public class FindFruitsAgent : Agent
     Transform fruit;
     Transform bomb;
 
-    Transform bombSecond = null;
 
     private void Start()
     {
         fruit = Instantiate(fruitPrefab, new Vector3(0, 1, 0), Quaternion.identity); 
-        bomb = Instantiate(bombPrefab, new Vector3(0, 1, 0), Quaternion.identity);
-        if (moreBombs)
+
+        if (addBomb)
         {
-            bombSecond = Instantiate(bombPrefab, new Vector3(0, 1, 0), Quaternion.identity);
+            bomb = Instantiate(bombPrefab, new Vector3(0, 1, 0), Quaternion.identity);
         }
 
         for (float i = topLeft.position.x; i < bottomRight.position.x+1; i+=1.5f)
@@ -52,20 +50,17 @@ public class FindFruitsAgent : Agent
     }
     public override void OnEpisodeBegin()
     {
-        transform.localPosition = Vector3.zero;
-        oldDist = Vector3.Distance(transform.position, fruit.position); 
+        transform.localPosition = Vector3.zero; 
         MoveItems();
     }
     public override void CollectObservations(VectorSensor sensor)
     {
         sensor.AddObservation(transform.localPosition);  
         sensor.AddObservation(fruit.localPosition);
-        sensor.AddObservation(bomb.localPosition); 
-        sensor.AddObservation(oldDist);
 
-        if (moreBombs)
+        if (addBomb)
         {
-            sensor.AddObservation(bombSecond.localPosition);
+            sensor.AddObservation(bomb.localPosition);
         }
 
     }
@@ -78,31 +73,9 @@ public class FindFruitsAgent : Agent
 
     }
 
-    float oldDist;
     private void Update()
     {
-        if(Vector3.Distance(transform.position, fruit.position) < oldDist)
-        {
-            SetReward(0.1f);
-            
-        }
-        else
-        {
-            SetReward(-0.1f);
-        }
-        oldDist = Vector3.Distance(transform.position, fruit.position);
-        /*
-        
-        if(GetCumulativeReward() > 2)
-        {
-            floor.material.color = Color.green;
-            EndEpisode();
-        }
-        if (GetCumulativeReward() < -2)
-        {
-            floor.material.color = Color.red;
-            EndEpisode();
-        }*/
+
 
     }
 
@@ -148,15 +121,15 @@ public class FindFruitsAgent : Agent
     private void MoveItems()
     {
         fruit.position = assetGrid[Random.Range(0,assetGrid.Count)];
-        bomb.position = assetGrid[Random.Range(0, assetGrid.Count)];
-        if (bombSecond != null)
+        if (bomb != null)
         {
-            bombSecond.position = assetGrid[Random.Range(0, assetGrid.Count)];
+            bomb.position = assetGrid[Random.Range(0, assetGrid.Count)];
+            if (fruit.position == bomb.position || fruit.position == bomb.position)
+            {
+                MoveItems();
+            }
         }
-        if(fruit.position == bomb.position || fruit.position == bombSecond.position || bombSecond.position == bomb.position)
-        {
-            MoveItems();
-        }
+
     }
 
 }
