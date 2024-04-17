@@ -20,7 +20,7 @@ public class FindFruitsAgent : Agent
     [SerializeField]
     Transform bombPrefab;
     [SerializeField]
-    Transform topLeft;
+    Transform topLeft;  
     [SerializeField]
     Transform bottomRight;
     List<Vector3> assetGrid = new List<Vector3>();

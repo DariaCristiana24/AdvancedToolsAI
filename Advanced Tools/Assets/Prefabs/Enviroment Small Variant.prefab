@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6277715536898282099, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.3
+      value: 44.600002
       objectReference: {fileID: 0}
     - target: {fileID: 6277715536898282099, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_LocalPosition.y
@@ -105,12 +105,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9009686774118966274, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
+      propertyPath: m_BehaviorName
+      value: Normal
+      objectReference: {fileID: 0}
+    - target: {fileID: 9009686774118966274, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_BehaviorType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9009686774118966274, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_BrainParameters.VectorObservationSize
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9040324610801238260, guid: 87e0c071b5440a344bd5b13e8a2f2e65, type: 3}
       propertyPath: m_IsTrigger
