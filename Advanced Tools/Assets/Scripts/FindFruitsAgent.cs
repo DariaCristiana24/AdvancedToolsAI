@@ -73,12 +73,6 @@ public class FindFruitsAgent : Agent
 
     }
 
-    private void Update()
-    {
-
-
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Fruit")
@@ -93,13 +87,6 @@ public class FindFruitsAgent : Agent
             SetReward(-10f);
             MoveItems(); 
             floor.material.color = Color.red;
-            EndEpisode();
-        }
-        if (other.tag == "Reward")
-        {
-            SetReward(2f);
-            MoveItems();
-            floor.material.color = Color.yellow;
             EndEpisode();
         }
         if (other.tag == "Obstacle")

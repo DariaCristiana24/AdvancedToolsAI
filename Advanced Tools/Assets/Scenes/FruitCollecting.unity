@@ -3382,6 +3382,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1162230549011939831, guid: a2dbb08479dc4f545bd92713d5d598d2, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162230549011939831, guid: a2dbb08479dc4f545bd92713d5d598d2, type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1272630762426414491, guid: a2dbb08479dc4f545bd92713d5d598d2, type: 3}
       propertyPath: m_Name
       value: Enviroment Small
