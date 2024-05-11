@@ -1038,7 +1038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 679727140442920262, guid: a7783da245027aa46b740d0e66158d69, type: 3}
       propertyPath: m_BehaviorName
-      value: Normal
+      value: Obstacles
       objectReference: {fileID: 0}
     - target: {fileID: 679727140442920262, guid: a7783da245027aa46b740d0e66158d69, type: 3}
       propertyPath: m_BehaviorType
