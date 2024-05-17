@@ -11,6 +11,8 @@ public class FindFruitsAgent : Agent
 {
     [SerializeField]
     bool addBomb;
+    [SerializeField]
+    bool addExtraBomb;
 
     [SerializeField]
     float speed = 5;
@@ -25,6 +27,7 @@ public class FindFruitsAgent : Agent
 
     Transform fruit;
     Transform bomb;
+    Transform extraBomb;
 
     [SerializeField]
     Transform[] possiblePos;
@@ -38,6 +41,10 @@ public class FindFruitsAgent : Agent
         if (addBomb)
         {
             bomb = Instantiate(bombPrefab, new Vector3(0, 1, 0), Quaternion.identity);
+            if (addExtraBomb)
+            {
+                extraBomb = Instantiate(bombPrefab, new Vector3(0, 1, 0), Quaternion.identity);
+            }
         }
 
 
@@ -56,18 +63,19 @@ public class FindFruitsAgent : Agent
         if (addBomb)
         {
             sensor.AddObservation(bomb.localPosition);
+            if (addExtraBomb)
+            {
+                sensor.AddObservation(extraBomb.localPosition);
+            }
         }
 
     }
     public override void OnActionReceived(ActionBuffers actions)
     {
-      //  float moveX = actions.ContinuousActions[0];
-       // float moveZ = actions.ContinuousActions[1];
 
-        //transform.position += new Vector3(moveX, 0, moveZ)* Time.deltaTime* speed;
        
         int dir =actions.DiscreteActions[0];
-        Debug.Log(dir);
+
         Quaternion quaternion = Quaternion.identity;
         quaternion.eulerAngles = new Vector3(0, 90 * dir, 0);
         transform.rotation = quaternion;
@@ -92,7 +100,6 @@ public class FindFruitsAgent : Agent
         if (other.tag == "Obstacle")
         {
             SetReward(-1f);
-           // floor.material.color = Color.white;
             floor.material.color = Color.red;
             EndEpisode();
         }
@@ -101,18 +108,27 @@ public class FindFruitsAgent : Agent
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
-        ActionSegment<float> act = actionsOut.ContinuousActions;
-        act[0] = Input.GetAxisRaw("Horizontal") * speed;
-        act[1] = Input.GetAxisRaw("Vertical") * speed;
+
     }
 
     private void MoveItems()
     {
         fruit.position = possiblePos[Random.Range(0, possiblePos.Count())].position;
 
-        
 
-        if (bomb != null)
+
+        if (addBomb && addExtraBomb)
+        {
+            bomb.position = possiblePos[Random.Range(0, possiblePos.Count())].position;
+            extraBomb.position = possiblePos[Random.Range(0, possiblePos.Count())].position;
+            if (fruit.position == bomb.position || fruit.position == extraBomb.position || extraBomb.position == bomb.position)
+            {
+                MoveItems();
+                 
+            }
+        }
+        
+        else if (addBomb && !addExtraBomb)
         {
             bomb.position = possiblePos[Random.Range(0, possiblePos.Count())].position;
             if (fruit.position == bomb.position)
